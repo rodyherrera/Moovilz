@@ -1,0 +1,103 @@
+/***
+ * Copyright (C) Rodolfo Herrera Hernandez. All rights reserved.
+ * Licensed under the MIT license. See LICENSE file in the project root
+ * for full license information.
+ *
+ * =+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+ *
+ * The Moovilz Source Code.
+ * 
+ * For related information - https://github.com/CodeWithRodi/Moovilz/
+ * 
+ * :: https://moovilz.codewithrodi.com/
+ * :: https://moovilz-backend.codewithrodi.com/
+ *
+ * =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+****/
+
+.Line-Container{
+    border: 1px solid var(--Tertiary-Color);
+    cursor: pointer;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    transition: .3s;
+    will-change: trasnform;
+}
+
+body.Rounded-Mode .Line-Container{
+    border-radius: .8rem;
+}
+
+.Line-Container:hover{
+    background-color: var(--Tertiary-Color);
+}
+
+:root.Light-Mode .Line-Container:hover{
+    color: var(--Secondary-Color);
+}
+
+.Line-Container:active{
+    transform: scale(0.98);
+}
+
+.Line-Title-Container{
+    display: flex;
+    align-items: center;
+    gap: .5rem;
+}
+
+.Line-Title-Icon-Container{
+    font-size: 1.3rem;
+}
+
+.Line-Details-Container .Line-Details{
+    opacity: .5;
+}
+
+:root.Light-Mode .Line-Details-Container .Line-Details{
+    opacity: .8;
+}
+
+.Line-Information-Container{
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    gap: .1rem;
+}
+
+.Line-Icon-Container{
+    padding: 0 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-left: 1px solid var(--Tertiary-Color);
+}
+
+@media screen and (min-width: 768px) and (max-width: 1366px){
+    .Line-Title-Container{
+        font-size: .9rem;
+    }
+
+    .Line-Title-Icon-Container{
+        font-size: 1.1rem;
+    }
+}
+
+@media screen and (max-width: 768px){
+    .Line-Header-Title{
+        font-size: .9rem;
+    }
+
+    .Line-Details{
+        font-size: .7rem;
+    }
+
+    .Line-Information-Container{
+        gap: 0;
+    }
+
+    .Line-Title-Icon-Container{
+        font-size: 1.1rem;
+    }
+}

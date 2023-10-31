@@ -1,0 +1,77 @@
+/***
+ * Copyright (C) Rodolfo Herrera Hernandez. All rights reserved.
+ * Licensed under the MIT license. See LICENSE file in the project root
+ * for full license information.
+ *
+ * =+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+ *
+ * The Moovilz Source Code.
+ * 
+ * For related information - https://github.com/CodeWithRodi/Moovilz/
+ * 
+ * :: https://moovilz.codewithrodi.com/
+ * :: https://moovilz-backend.codewithrodi.com/
+ *
+ * =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+****/
+
+#QR-Code-Exit-Title{
+    text-transform: uppercase;
+    cursor: pointer;
+    font-size: .8rem;
+    letter-spacing: 0.07rem;
+    font-weight: 500;
+    margin-bottom: 1rem;
+    will-change: transform;
+    transition: .3s;
+}
+
+#QR-Code-Exit-Title:hover{
+    opacity: .9;
+}
+
+#QR-Code-Exit-Title::before{
+    content: '';
+    height: 1px;
+    width: 40px;
+    background-color: var(--Primary-Color);
+    display: inline-block;
+    margin-bottom: 4px;
+    margin-right: 5px;
+}
+
+#QR-Code-Content-Container{
+    align-items: end;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    cursor: initial;
+    padding: 1rem;
+}
+
+#QR-Floating-Container{
+    position: absolute;
+    top: 2rem;
+    right: 0;
+    z-index: 10;
+    background-color: var(--Secondary-Color);
+    border: 1px solid var(--Tertiary-Color);
+    border-radius: 1rem;
+    border-top-right-radius: 0;
+}
+
+#QR-Code-Context-Container{
+    font-size: 1rem;
+}
+
+#QR-Code-Container{
+    width: 130px;
+    height: 130px;
+}
+
+@media screen and (max-width: 768px){
+    #QR-Code-Container{
+        width: 100px;
+        height: 100px;
+    }
+}

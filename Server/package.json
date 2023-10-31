@@ -1,0 +1,35 @@
+{
+  "name": "moovilz-server",
+  "version": "1.0.1",
+  "main": "Server.js",
+  "license": "MIT",
+  "description": "Moovilz server",
+  "author": "@CodeWithRodi",
+  "engines": {
+    "node": "16.13.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/CodeWithRodi/Moovilz/"
+  },
+  "scripts": {
+    "start": "node Server.js",
+    "admin": "node_modules/.bin/webpack --config webpack.config.js --mode=production",
+    "dev": "nodemon Server.js"
+  },
+  "dependencies": {
+    "compression": "^1.7.4",
+    "cors": "^2.8.5",
+    "dotenv": "^16.3.1",
+    "express": "^4.18.2",
+    "express-mongo-sanitize": "^2.2.0",
+    "express-session": "^1.17.3",
+    "helmet": "^7.0.0",
+    "hpp": "^0.2.3",
+    "mongoose": "^7.5.2",
+    "mongoose-partial-search": "^1.0.6",
+    "nodemon": "^3.0.1",
+    "uuid": "^9.0.0",
+    "xss-clean": "^0.1.4"
+  }
+}

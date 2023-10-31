@@ -1,0 +1,62 @@
+/***
+ * Copyright (C) Rodolfo Herrera Hernandez. All rights reserved.
+ * Licensed under the MIT license. See LICENSE file in the project root
+ * for full license information.
+ *
+ * =+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+ *
+ * The Moovilz Source Code.
+ * 
+ * For related information - https://github.com/CodeWithRodi/Moovilz/
+ * 
+ * :: https://moovilz.codewithrodi.com/
+ * :: https://moovilz-backend.codewithrodi.com/
+ *
+ * =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+****/
+
+#Bus-Schedule-Container .MuiTable-root{
+    padding-right: 1rem;
+}
+
+#Bus-Schedule-Container .MuiSkeleton-root{
+    background-color: var(--Skeleton-Background-Color);
+}
+
+#Bus-Schedule-Container{
+    padding: 0 2rem;
+    overflow-y: scroll;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+
+#Bus-Schedule-Container .MuiTableCell-root{
+    color: var(--Primary-Color);
+    border-color: var(--Tertiary-Color);
+    background-color: var(--Secondary-Color);
+}
+
+@media screen and (min-width: 768px) and (max-width: 1366px){
+    #Bus-Schedule-Container .MuiTableCell-root{
+        font-size: .8rem !important;
+    }
+}
+
+@media screen and (max-width: 768px){
+    #Bus-Schedule-Container{
+        padding: 0 1rem;
+    }
+
+    #Bus-Schedule-Container .MuiTableHead-root .MuiTableCell-root{
+        font-size: .7rem;
+        text-transform: uppercase;
+        font-weight: 800;
+    }
+
+    #Bus-Schedule-Container .MuiTableBody-root .MuiTableCell-root{
+        font-size: .7rem;
+    }
+}

@@ -1,0 +1,171 @@
+/***
+ * Copyright (C) Rodolfo Herrera Hernandez. All rights reserved.
+ * Licensed under the MIT license. See LICENSE file in the project root
+ * for full license information.
+ *
+ * =+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+ *
+ * The Moovilz Source Code.
+ * 
+ * For related information - https://github.com/CodeWithRodi/Moovilz/
+ * 
+ * :: https://moovilz.codewithrodi.com/
+ * :: https://moovilz-backend.codewithrodi.com/
+ *
+ * =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+****/
+
+@keyframes Header-Slide-Down{
+    from{
+        transform: translateY(-100%);
+    }
+    to{
+        transform: translateY(0);
+    }
+}
+
+@keyframes Header-Border-Bottom{
+    0%{
+        border-width: 10%;
+    }
+    100%{
+        border-width: 50%;
+    }
+}
+
+#Header{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    padding: 1.5rem 2rem;
+    justify-content: space-between;
+    position: relative;
+    z-index: 1000;
+}
+
+#Header.Header-Scrolled{
+    width: 100%;
+    position: sticky;
+    top: 0;
+    z-index: 500;
+    animation: Header-Slide-Down .3s ease-out, Header-Border-Bottom 3s ease-out;
+    border-bottom: 1px solid var(--Tertiary-Color);
+    background-color: var(--Secondary-Color);
+}
+
+#Header #Brand-Container{
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    cursor: pointer;
+    will-change: transform;
+    transition: .3s;
+}
+
+#Header #Brand-Container:hover{
+    opacity: .9;
+}
+
+#Header #Brand-Container-Title{
+    font-weight: 800;
+    font-size: 1.1rem;
+    text-transform: uppercase;
+    letter-spacing: 0.1rem;
+}
+
+#Header #Navigation-Container{
+    display: flex;
+    gap: 1rem;
+}
+
+#Header #Icon-Based-Navigation-Container{
+    display: flex;
+    gap: 1rem;
+    justify-content: flex-end;
+}
+
+#Header .Icon-Based-Navigation-Item-Container{
+    cursor: pointer;
+    z-index: 100;
+    position: relative;
+}
+
+#Footer{
+    padding: 1.5rem 2rem;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#Footer #About-Brand-Title{
+    font-size: .9rem;
+}
+
+#Footer #Left-Container{
+    display: flex;
+    align-items: center;
+    gap: 3rem;
+}
+
+#Footer #About-Brand-Container{
+    display: flex;
+    gap: .5rem;
+    align-items: center;
+}
+
+#Footer #Navigation-Container{
+    display: flex;
+    gap: 1.5rem;
+    align-items: center;
+}
+
+@media screen and (max-width: 768px){
+    #Header #Navigation-Container{
+        display: none;
+    }
+
+    #Header .Icon-Based-Navigation-Item-Container[data-disponmob='false']{
+        display: none;
+    }
+   
+    #Header.Header-Scrolled{
+        padding: 1rem;
+    }
+
+    #Header.Header-Scrolled #Brand-Logo-Container{
+        width: 16px;
+        height: 16px;
+    }
+
+    #Header.Header-Scrolled #Brand-Container-Title{
+        font-size: .85rem;
+    }
+
+    #Header .Navigation-Item-Icon-Container{
+        font-size: 1.3rem;
+    }
+
+    #Header.Header-Scrolled .Navigation-Item-Icon-Container{
+        font-size: 1.2rem;
+    }
+
+    #Footer #About-Brand-Title{
+        font-size: .7rem;
+    }
+
+    #Header{
+        padding: 1.5rem 1rem;
+    }
+
+    #Footer{
+        padding: 1rem;
+        flex-direction: column;
+        gap: .5rem;
+        align-items: center;
+    }
+
+    #Footer #Navigation-Container{
+        display: none;
+    }
+}

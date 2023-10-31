@@ -1,0 +1,29 @@
+{
+    "dir": "auto",
+    "short_name": "Moovilz",
+    "name": "Moovilz",
+    "lang": "en-US",
+    "description": "",
+    "start_url": ".",
+    "display": "standalone",
+    "theme_color": "#FFFFFF",
+    "background_color": "#FFFFFF",
+    "icons": [
+    ],
+    "scope": "/",
+    "prefer_related_applications": false,
+    "orientation": "portrait-primary",
+    "categories": [],
+    "splash_pages": null,
+    "display_override": [
+        {
+            "action": "android.intent.action.VIEW",
+            "conditions": [
+                {
+                    "android:packageName": "com.android.chrome"
+                }
+            ],
+            "disposition": "window"
+        }
+    ]
+}

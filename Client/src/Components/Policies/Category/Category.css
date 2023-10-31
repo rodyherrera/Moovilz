@@ -1,0 +1,49 @@
+/***
+ * Copyright (C) Rodolfo Herrera Hernandez. All rights reserved.
+ * Licensed under the MIT license. See LICENSE file in the project root
+ * for full license information.
+ *
+ * =+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+ *
+ * The Moovilz Source Code.
+ * 
+ * For related information - https://github.com/CodeWithRodi/Moovilz/
+ * 
+ * :: https://moovilz.codewithrodi.com/
+ * :: https://moovilz-backend.codewithrodi.com/
+ *
+ * =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+****/
+
+.Policy-Category-Title{
+    margin-bottom: .5rem;
+    text-transform: uppercase;
+    letter-spacing: 0.1rem;
+    font-size: 1.1rem;
+}
+
+.Policy-Category-Description{
+    max-width: 90%;
+    font-size: .98rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1366px){
+    .Policy-Category-Description{
+        font-size: .9rem;
+    }
+}
+
+@media screen and (max-width: 768px){
+    .Policy-Category-Title{
+        font-size: .95rem;
+    }
+
+    .Policy-Category-Description{
+        font-size: .75rem;
+        max-width: unset;
+        line-height: 1.2rem;
+    }
+}

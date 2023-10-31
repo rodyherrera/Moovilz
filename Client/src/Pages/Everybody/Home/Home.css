@@ -1,0 +1,180 @@
+/***
+ * Copyright (C) Rodolfo Herrera Hernandez. All rights reserved.
+ * Licensed under the MIT license. See LICENSE file in the project root
+ * for full license information.
+ *
+ * =+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+ *
+ * The Moovilz Source Code.
+ * 
+ * For related information - https://github.com/CodeWithRodi/Moovilz/
+ * 
+ * :: https://moovilz.codewithrodi.com/
+ * :: https://moovilz-backend.codewithrodi.com/
+ *
+ * =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+****/
+
+#Home-Main{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+#Home-Main #Brand-Container{
+    display: flex;
+    align-items: center;
+    position: relative;
+    flex-wrap: nowrap;
+    padding: 0 2rem;
+    justify-content: space-between;
+}
+
+#Home-Main #Brand-Container #Right-Container{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    bottom: 3rem;
+    height: 100vh;
+}
+
+@keyframes width{
+    from{
+        width: 0;
+    }
+    to{
+        width: 20px;
+    }
+}
+
+#Home-Main #Brand-Purpose-Title::after{
+    content: '';
+    display: block;
+    background-color: var(--Primary-Color);
+    height: 1px;
+    margin-top: .5rem;
+    animation: width 1.2s ease-in-out forwards;
+}
+
+#Home-Main #Brand-Container #Brand-Title{
+    font-size: 4vw;
+}
+
+#Home-Main #Brand-Container #Brand-Title-Highlight{
+    background-color: var(--Highlight-Color);
+    color: var(--Secondary-Color);
+    padding: 0 .5rem;
+}
+
+#Home-Main #Brand-Container #Quick-Navigation-Container{
+    margin: 1rem 0;
+}
+
+#Home-Main #Brand-Purpose-Title{
+    margin-bottom: 1rem;
+}
+
+#Home-Main #Feature-Gradient-Container{
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 50%;
+    height: 100%;
+    background-image: linear-gradient(to left, var(--Primary-Linear-Gradient));
+    z-index: 1;
+    pointer-events: none;
+}
+
+#Home-Main #Features-Wrapper{
+    position: relative;
+}
+
+#Home-Main #Brand-Container #Left-Container{
+    width: 50%;
+}
+
+body.Rounded-Mode #Home-Main #Brand-Container #Brand-Title-Highlight{
+    border-radius: 1.5rem;
+    padding: 0 1rem;
+}
+
+:root.Light-Mode #Home-Main #Brand-Container #Brand-Title-Highlight{
+    color: var(--Primary-Color);
+}
+
+#Home-Main #Brand-Container #Quick-Navigation-Container #Button-Description{
+    display: none;
+}
+
+body.Rounded-Mode #Home-Main #Quick-Navigation-Container .Button{
+    border-top-left-radius: 0;
+    border-bottom-right-radius: 0;
+    border-top-right-radius: 1rem;
+    border-bottom-right-radius: 1rem;
+}
+
+@media screen and (max-width: 768px){
+    #Home-Main #Brand-Container #Left-Container{
+        width: 100%;
+    }
+
+    #Home-Main #Brand-Container #Brand-Title{
+        font-size: 2.3rem;
+    }
+
+    #Home-Main #Mobile-Features-Container{
+        padding: 0 1rem;
+    }
+
+    #Home-Main #Brand-Container{
+        flex-direction: column;
+        align-items: flex-start;
+        margin-top: 1rem;
+        gap: 3rem;
+        padding: 0 1rem;
+    }
+
+    #Home-Main #Brand-Purpose-Title{
+        font-size: .75rem;
+        max-width: 70%;
+    }
+
+    #Home-Main #Brand-Container #Quick-Navigation-Container .Button{
+        width: 150px;
+        padding: .3rem;
+    }
+    
+    #Home-Main #Brand-Container #Quick-Navigation-Container .Button-Icon{
+        border: unset;
+    }
+
+        #Home-Main #Brand-Container #Quick-Navigation-Container{
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    #Home-Main #Brand-Container #Quick-Navigation-Container #Button-Description{
+        display: block;
+        margin: 1rem 0;
+        padding-left: 1rem;
+        border-left: 1px solid var(--Primary-Color);
+        font-size: .7rem;
+        max-width: 90%;
+    }
+
+    #Room-Relaxing-Overlay-Title{
+        display: none;
+    }
+
+    #Home-Main #Brand-Container #Right-Container{
+        width: 100%;
+        height: auto;
+        gap: 2rem;
+        align-items: flex-start;
+        flex-direction: column;
+        justify-content: flex-start;
+    }
+}

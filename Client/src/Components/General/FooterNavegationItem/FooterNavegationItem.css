@@ -1,0 +1,50 @@
+/***
+ * Copyright (C) Rodolfo Herrera Hernandez. All rights reserved.
+ * Licensed under the MIT license. See LICENSE file in the project root
+ * for full license information.
+ *
+ * =+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+ *
+ * The Moovilz Source Code.
+ * 
+ * For related information - https://github.com/CodeWithRodi/Moovilz/
+ * 
+ * :: https://moovilz.codewithrodi.com/
+ * :: https://moovilz-backend.codewithrodi.com/
+ *
+ * =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+****/
+
+.Footer-Navigation-Item-Container{
+    display: flex;
+    align-items: center;
+    gap: .5rem;
+    cursor: pointer;
+    transition: .3s;
+    will-change: transform;
+}
+
+.Footer-Navigation-Item-Container:hover{
+    opacity: .6;
+}
+
+.Footer-Navigation-Item-Container:active{
+    transform: scale(.98);
+}
+
+.Footer-Navigation-Item-Icon{
+    font-size: .9vw;
+}
+
+.Footer-Navigation-Item-Icon-Container{
+    transition: .3s;
+    will-change: transform;
+}
+
+.Footer-Navigation-Item-Icon-Container:hover{
+    opacity: .7;
+}
+
+.Footer-Navigation-Item-Title{
+    font-size: .9rem;
+}

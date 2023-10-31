@@ -1,0 +1,79 @@
+/***
+ * Copyright (C) Rodolfo Herrera Hernandez. All rights reserved.
+ * Licensed under the MIT license. See LICENSE file in the project root
+ * for full license information.
+ *
+ * =+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+ *
+ * The Moovilz Source Code.
+ * 
+ * For related information - https://github.com/CodeWithRodi/Moovilz/
+ * 
+ * :: https://moovilz.codewithrodi.com/
+ * :: https://moovilz-backend.codewithrodi.com/
+ *
+ * =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+****/
+
+:root.Light-Mode .Outlined-Arrowed-Button-Container:hover{
+    color: var(--Secondary-Color);
+}
+
+.Outlined-Arrowed-Button-Container:hover{
+    background-color: var(--Tertiary-Color);
+    border-color: var(--Tertiary-Color);
+}
+
+.Outlined-Arrowed-Button-Container:hover .Outlined-Arrowed-Button-Icon-Container{
+    border-color: var(--Tertiary-Color);
+}
+
+.Outlined-Arrowed-Button-Container .MuiCircularProgress-root{
+    color: var(--Primary-Color) !important;
+    margin-right: 0;
+}
+
+.Outlined-Arrowed-Button-Container{
+    border: 1px solid var(--Primary-Color);
+    cursor: pointer;
+    transition: .3s;
+    will-change: transform;
+    width: fit-content;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+body.Rounded-Mode .Outlined-Arrowed-Button-Container{
+    border-radius: 2rem;
+}
+
+.Outlined-Arrowed-Button-Icon-Container{
+    border-right: 1px solid var(--Primary-Color);
+    padding: .5rem 1rem;
+}
+
+.Outlined-Arrowed-Button-Title{
+    font-size: 1rem;
+    padding: .5rem 1.5rem;
+    text-transform: uppercase;
+    letter-spacing: 0.1rem;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1366px){
+    .Outlined-Arrowed-Button-Title{
+        font-size: .85rem;
+    }
+}
+
+@media screen and (max-width: 768px){
+    .Outlined-Arrowed-Button-Title{
+        font-size: .7rem;
+        padding: 0.5rem 1rem;
+    }
+
+    .Outlined-Arrowed-Button-Icon-Container{
+        font-size: .9rem;
+        padding: .5rem .8rem;
+    }
+}

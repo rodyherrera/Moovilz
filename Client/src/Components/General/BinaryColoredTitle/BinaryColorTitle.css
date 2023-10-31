@@ -1,0 +1,74 @@
+/***
+ * Copyright (C) Rodolfo Herrera Hernandez. All rights reserved.
+ * Licensed under the MIT license. See LICENSE file in the project root
+ * for full license information.
+ *
+ * =+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+ *
+ * The Moovilz Source Code.
+ * 
+ * For related information - https://github.com/CodeWithRodi/Moovilz/
+ * 
+ * :: https://moovilz.codewithrodi.com/
+ * :: https://moovilz-backend.codewithrodi.com/
+ *
+ * =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+****/
+
+#Binary-Color-Title-Container{
+    width: 100%;
+    display: flex;
+}
+
+body.Rounded-Mode #Binary-Color-Title-Container{
+    gap: 1rem;
+}
+
+#Binary-Color-Title-Left{
+    background-color: var(--Highlight-Color);
+    padding: .3rem 1rem;
+    text-transform: uppercase;
+    color: var(--Secondary-Color);
+    letter-spacing: 0.06rem;
+    width: fit-content;
+    font-size: .8rem;
+}
+
+:root.Light-Mode #Binary-Color-Title-Left{
+    color: var(--Primary-Color);
+}
+
+#Binary-Color-Title-Right{
+    padding: .3rem 1rem;
+    text-transform: uppercase;
+    font-size: .8rem;
+    letter-spacing: 0.06rem;
+    color: var(--Secondary-Color);
+    font-weight: 700;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--Primary-Color);
+}
+
+body.Rounded-Mode #Binary-Color-Title-Right,
+body.Rounded-Mode #Binary-Color-Title-Left{
+    border-radius: 1.5rem;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1366px){
+    #Binary-Color-Title-Left,
+    #Binary-Color-Title-Right{
+        font-size: .8vw;
+    }
+}
+
+@media screen and (max-width: 768px){
+    #Binary-Color-Title-Right{
+        font-size: .55rem;
+    }
+
+    #Binary-Color-Title-Left{
+        font-size: .6rem;
+    }
+}

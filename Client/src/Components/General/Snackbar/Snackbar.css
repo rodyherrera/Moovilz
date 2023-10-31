@@ -1,0 +1,85 @@
+/***
+ * Copyright (C) Rodolfo Herrera Hernandez. All rights reserved.
+ * Licensed under the MIT license. See LICENSE file in the project root
+ * for full license information.
+ *
+ * =+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+ *
+ * The Moovilz Source Code.
+ * 
+ * For related information - https://github.com/CodeWithRodi/Moovilz/
+ * 
+ * :: https://moovilz.codewithrodi.com/
+ * :: https://moovilz-backend.codewithrodi.com/
+ *
+ * =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+****/
+
+.Snackbar-Container{
+    position: fixed;
+    bottom: 1.5rem;
+    left: 2rem;
+    z-index: 100000;
+}
+
+.Snackbar-Content-Container{
+    min-width: 500px;
+    box-shadow: 0 0 11px 0px var(--Tertiary-Color);
+    border: 1px solid var(--Tertiary-Color);
+    background-color: var(--Secondary-Color);
+    border-radius: .25rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.Snackbar-Title-Container,
+.Snackbar-Close-Title-Container{
+    padding: .8rem 1rem;
+}
+
+.Snackbar-Close-Title-Container{
+    border-left: 1px solid var(--Tertiary-Color);
+}
+
+.Snackbar-Close-Title{
+    font-weight: 600;
+    text-transform: uppercase;
+    font-size: .9vw;
+    letter-spacing: 0.1rem;
+}
+
+@media screen and (max-width: 768px){
+    .Snackbar-Container{
+        transform: unset;
+        left: 0;
+        bottom: 0;
+        padding: 1rem;
+    }
+
+    .Snackbar-Content-Container{
+        min-width: unset;
+        box-shadow: unset;
+        flex-direction: row-reverse;
+        align-items: center;
+        width: 100%;
+    }
+
+    .Snackbar-Title-Container{
+        padding: .8rem;
+    }
+
+    .Snackbar-Title{
+        font-size: .7rem;
+    }
+
+    .Snackbar-Close-Title{
+        font-size: .6rem;
+    }
+
+    .Snackbar-Close-Title-Container{
+        border-left: unset;
+        border-right: 1px solid var(--Tertiary-Color);
+        padding: .8rem;
+    }
+}

@@ -1,0 +1,102 @@
+/***
+ * Copyright (C) Rodolfo Herrera Hernandez. All rights reserved.
+ * Licensed under the MIT license. See LICENSE file in the project root
+ * for full license information.
+ *
+ * =+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+ *
+ * The Moovilz Source Code.
+ * 
+ * For related information - https://github.com/CodeWithRodi/Moovilz/
+ * 
+ * :: https://moovilz.codewithrodi.com/
+ * :: https://moovilz-backend.codewithrodi.com/
+ *
+ * =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+****/
+
+.Stop-Container{
+    padding: 1rem;
+    border: 1px solid var(--Tertiary-Color);
+    width: calc(50% - 1rem);
+    align-items: center;
+    display: flex;
+    will-change: transform;
+    transition: .2s;
+    gap: 1rem;
+}
+
+.Stop-Container-Opacity{
+    opacity: .6;
+}
+
+:root.Light-Mode .Stop-Container-Opacity{
+    opacity: .8;
+}
+
+body.Rounded-Mode .Stop-Container{
+    border-radius: .8rem;
+}
+
+.Stop-Header-Title{
+    font-size: .85rem;
+}
+
+.Stop-Order{
+    font-size: .8rem;
+}
+
+.Stop-Order-Container{
+    border: 1px solid var(--Tertiary-Color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #8a63d2;
+    border-radius: 50%;
+    min-width: 30px;
+    min-height: 30px;
+}
+
+.Stop-Detail{
+    cursor: pointer;
+    border: 1px solid var(--Tertiary-Color);
+    padding: .2rem .5rem;
+    text-transform: uppercase;
+    letter-spacing: 0.08rem;
+    font-size: .6rem;
+    will-change: transform;
+    transition: .3s;
+}
+
+.Stop-Detail:hover{
+    background-color: var(--Tertiary-Color);
+}
+
+.Stop-Header-Container{
+    display: flex;
+    flex-direction: column;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1366px){
+    .Stop-Header-Title{
+        font-size: .8rem;
+    }
+
+    .Stop-Detail{
+        font-size: .55rem;
+    }
+}
+
+@media screen and (max-width: 768px){
+    .Stop-Container{
+        width: 100%;
+    }
+
+    .Stop-Header-Title{
+        font-size: .7rem;
+    }
+
+    .Stop-Detail{
+        font-size: .45rem;
+    }
+}

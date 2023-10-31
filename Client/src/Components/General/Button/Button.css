@@ -1,0 +1,105 @@
+/***
+ * Copyright (C) Rodolfo Herrera Hernandez. All rights reserved.
+ * Licensed under the MIT license. See LICENSE file in the project root
+ * for full license information.
+ *
+ * =+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+ *
+ * The Moovilz Source Code.
+ * 
+ * For related information - https://github.com/CodeWithRodi/Moovilz/
+ * 
+ * :: https://moovilz.codewithrodi.com/
+ * :: https://moovilz-backend.codewithrodi.com/
+ *
+ * =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+****/
+
+.Button{
+    background-color: var(--Primary-Color);
+    color: var(--Secondary-Color);
+    display: flex;
+    cursor: pointer;
+    justify-content: space-between;
+    align-items: center;
+    will-change: transform;
+    transition: .3s;
+}
+
+.Button .MuiCircularProgress-root{
+    color: var(--Secondary-Color);
+    width: 20px !important;
+    height: 20px !important;
+    margin: 0 .4rem;
+}
+
+.Button:hover{
+    border-radius: .2rem;
+}
+
+.Button.Outlined{
+    border: 1px solid var(--Primary-Color);
+    background-color: transparent;
+    color: var(--Primary-Color);
+}
+
+.Button-Text{
+    padding: .6rem 1.5rem;
+    text-transform: uppercase;
+    letter-spacing: 0.08rem;
+    font-weight: 500;
+}
+
+.Button-Icon{
+    display: flex;
+    padding: .6rem .7rem;
+    border-left: 1px solid var(--Secondary-Color);
+    justify-content: center;
+    align-items: center;
+}
+
+.Button.Icon-Start{
+    flex-direction: row-reverse;
+    padding: 0 .5rem;
+}
+
+.Button.Icon-Start .Button-Icon{
+    border-left: unset;
+    border-right: 1px solid var(--Secondary-Color);
+}
+
+.Button.Icon-End .Button-Icon{
+    border-left: 1px solid var(--Primary-Color);
+}
+
+body.Rounded-Mode .Button{
+    border-radius: 1.5rem;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1366px){
+    .Button{
+        font-size: .7rem;
+    }
+
+    .Button-Text{
+        padding: .45rem 1.5rem;
+    }
+
+    .Button-Icon{
+        padding: .45rem .7rem;
+    }
+}
+
+@media screen and (max-width: 768px){
+    .Button-Text{
+        padding: .2rem 1rem;
+    }
+
+    .Button.Icon-End .Button-Icon{
+        font-size: 1.2rem;
+    }
+
+    .Button-Icon{
+        padding: .2rem .5rem;
+    }
+}

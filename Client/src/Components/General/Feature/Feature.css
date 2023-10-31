@@ -1,0 +1,133 @@
+/***
+ * Copyright (C) Rodolfo Herrera Hernandez. All rights reserved.
+ * Licensed under the MIT license. See LICENSE file in the project root
+ * for full license information.
+ *
+ * =+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+ *
+ * The Moovilz Source Code.
+ * 
+ * For related information - https://github.com/CodeWithRodi/Moovilz/
+ * 
+ * :: https://moovilz.codewithrodi.com/
+ * :: https://moovilz-backend.codewithrodi.com/
+ *
+ * =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+****/
+
+.Feature-Container{
+    padding: 24px;
+    border-radius: 5px;
+    background-color: var(--Secondary-Color);
+    border: 1px solid var(--Tertiary-Color);
+    display: flex;
+    max-width: 350px;
+    min-width: 350px;
+    transition: .2s;
+    flex-direction: column;
+    gap: .5rem;
+    will-change: transform;
+}
+
+.Feature-Container:hover{
+    border-style: dashed;
+    z-index: 1000;
+    position: relative;
+}
+
+.Feature-Content-Container{
+    max-height: 72px;
+    overflow-y: scroll;
+    padding-right: .6rem;
+}
+
+.Feature-Header-Container{
+    display: flex;
+    gap: .8rem;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.Feature-Header-Icon-Container{
+    width: 48px;
+    height: 48px;
+    border-radius: 100%;
+    display: flex;
+    color: var(--Icon-Color);
+    align-items: center;
+    justify-content: center;
+    border: 1px solid var(--Tertiary-Color);
+    flex-shrink: 0;
+}
+
+.Feature-Header-Title{
+    color: var(--HSLA-Primary-Color);
+    font-size: 1.25rem;
+    line-height: 1.5rem;
+    letter-spacing: -0.020625rem;
+    font-weight: 600;
+}
+
+:root.Light-Mode .Feature-Header-Title{
+    color: var(--Tertiary-Color);
+}
+
+.Feature-Content{
+    color: var(--HSLA-Secondary-Color);
+    font-size: 0.875rem;
+    line-height: 1.5rem;
+    letter-spacing: initial;
+    font-weight: 400;
+}
+
+body.Rounded-Mode .Feature-Container{
+    border-radius: .5rem;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1366px){
+    .Feature-Header-Icon-Container{
+        width: 35px;
+        height: 35px;
+        font-size: 1.1rem;
+    }
+
+    .Feature-Header-Container{
+        gap: .9rem;
+    }
+
+    .Feature-Container{
+        padding: 1.2rem;
+        gap: .7rem;
+    }
+
+    .Feature-Content{
+        font-size: .9rem;
+    }
+}
+
+@media screen and (max-width: 768px){
+    .Feature-Container{
+        min-width: 80%;
+        padding: 1rem;
+        gap: .5rem;
+    }
+
+    .Feature-Header-Icon-Container{
+        width: 30px;
+        height: 30px;
+        font-size: .9rem;
+    }
+
+    .Feature-Content{
+        font-size: .7rem;
+        line-height: 1.2rem;
+    }
+
+    .Feature-Content-Container{
+        max-height: 80px;
+    }
+
+    .Feature-Header-Title{
+        font-size: .95rem;
+    }
+}

@@ -1,0 +1,211 @@
+/***
+ * Copyright (C) Rodolfo Herrera Hernandez. All rights reserved.
+ * Licensed under the MIT license. See LICENSE file in the project root
+ * for full license information.
+ *
+ * =+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+ *
+ * The Moovilz Source Code.
+ * 
+ * For related information - https://github.com/CodeWithRodi/Moovilz/
+ * 
+ * :: https://moovilz.codewithrodi.com/
+ * :: https://moovilz-backend.codewithrodi.com/
+ *
+ * =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+****/
+
+.Binary-View-Container{
+    width: 100%;
+    height: calc(100% - 75px);
+    border-top: 1px solid var(--Primary-Color);
+    border-bottom: 1px solid var(--Primary-Color);
+    display: flex;
+    justify-content: space-between;
+}
+
+.Binary-View-Container .Country-Select-Container{
+    position: relative;
+}
+
+.Binary-View-Container .Country-List-Container{
+    position: absolute;
+    bottom: 3.5rem;
+    border: 1px solid var(--Tertiary-Color);
+    width: 100%;
+    background-color: var(--Secondary-Color);
+    border-radius: .5rem;
+}
+
+.Binary-View-Container .Country-List-Item{
+    padding: .5rem 1rem;
+    letter-spacing: 0.09rem;
+    text-transform: uppercase;
+    font-size: .8rem;
+    cursor: pointer;
+}
+
+.Binary-View-Container .Country-List-Item.Selected{
+    text-decoration: line-through;
+    cursor: not-allowed;
+}
+
+.Binary-View-Container .Country-List-Item:hover{
+    background-color: var(--Tertiary-Color);
+}
+
+:root.Light-Mode .Binary-View-Container .Country-List-Item:hover{
+    color: var(--Secondary-Color);
+}
+
+.Binary-View-Container .Country-List-Item:not(:last-child){
+    border-bottom: 1px solid var(--Tertiary-Color);
+}
+
+.Binary-View-Container .MuiCircularProgress-root{
+    color: var(--Secondary-Color);
+    width: 20px !important;
+    height: 20px !important;
+    margin-right: 1rem;
+}
+
+.Binary-View-Container .Interaction-Container,
+.Binary-View-Container .Knowledge-Container{
+    width: 50%;
+    overflow-y: scroll;
+}
+
+.Knowledge-Body-Container{
+    height: 100%;
+    overflow-y: hidden;
+    position: relative;
+}
+
+.Binary-View-Container .Knowledge-Container{
+    border-right: 1px solid var(--Primary-Color);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.Binary-View-Container .Knowledge-Header-Title-Highlighted{
+    background-color: var(--Highlight-Color);
+    color: var(--Secondary-Color);
+    padding: 0 .5rem;
+}
+
+body.Rounded-Mode .Binary-View-Container .Knowledge-Header-Title-Highlighted{
+    border-radius: 1.5rem;
+    padding: 0 1.2rem;
+}
+
+:root.Light-Mode .Binary-View-Container .Knowledge-Header-Title-Highlighted{
+    color: var(--Primary-Color);
+}
+
+.Binary-View-Container .Knowledge-Footer-Container{
+    padding: 1rem 2rem;
+    display: flex;
+    backdrop-filter: blur(1px);
+    z-index: 10;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.Binary-View-Container .Knowledge-Body-Image{
+    height: 100%;
+    object-fit: contain;
+    width: 100%;
+}
+
+.Binary-View-Container .Knowledge-Header-Container{
+    padding: 2rem;
+}
+
+.Binary-View-Container .Knowledge-Header-Title{
+    font-size: 3vw;
+}
+
+.Binary-View-Container .Knowledge-Header-Subtitle{
+    margin-top: .5rem;
+    max-width: 700px;
+    font-size: 1.1rem;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1366px){
+    .Binary-View-Container .Knowledge-Header-Subtitle{
+        max-width: 500px;
+        font-size: .95rem;
+    }
+
+    .Binary-View-Container .Country-List-Item{
+        font-size: .7rem;
+    }
+}
+
+@media screen and (max-width: 768px){
+    .Binary-View-Container{
+        flex-direction: column;
+        border-color: var(--Tertiary-Color);
+    }
+
+    .Binary-View-Container .Knowledge-Body-Image{
+        width: 95%;
+        height: auto;
+    }
+
+    .Binary-View-Container .Knowledge-Header-Title{
+        font-size: 2.5rem;
+    }
+   
+    .Binary-View-Container .Location-Container{
+        font-size: .8rem;
+    }
+    
+    .Binary-View-Container .Location-Container .Button-Text{
+        padding: .35rem 1rem;
+    }
+
+    .City-Title-Container{
+        font-size: .9rem;
+    }
+
+    .City-Icon-Container{
+        font-size: 1rem;
+    }
+
+    .Binary-View-Container .Knowledge-Header-Subtitle{
+        max-width: unset;
+        font-size: .8rem;
+    }
+
+    .Binary-View-Container .Interaction-Container, 
+    .Binary-View-Container .Knowledge-Container{
+        overflow-y: unset;
+        border: unset;
+        width: 100%;
+    }
+
+    .Binary-View-Container .Country-List-Item{
+        font-size: .65rem;
+    }
+
+    .Binary-View-Go-Back-Button{
+        font-size: .7rem;
+    }
+
+    .Binary-View-Go-Back-Button .Button-Icon{
+        font-size: 1rem;
+        padding: .4rem .5rem;
+
+    }
+
+    .Binary-View-Container .Knowledge-Header-Container{
+        padding: 1rem;
+    }
+
+    .Binary-View-Container .Knowledge-Footer-Container{
+        padding: 1rem;
+    }
+}

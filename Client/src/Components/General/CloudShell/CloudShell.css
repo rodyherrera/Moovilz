@@ -1,0 +1,109 @@
+/***
+ * Copyright (C) Rodolfo Herrera Hernandez. All rights reserved.
+ * Licensed under the MIT license. See LICENSE file in the project root
+ * for full license information.
+ *
+ * =+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+ *
+ * The Moovilz Source Code.
+ * 
+ * For related information - https://github.com/CodeWithRodi/Moovilz/
+ * 
+ * :: https://moovilz.codewithrodi.com/
+ * :: https://moovilz-backend.codewithrodi.com/
+ *
+ * =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+****/
+
+#Cloud-Shell-Container{
+    position: fixed;
+    bottom: 0;
+    z-index: 100;
+    width: 100%;
+    transition: height 0.5 ease;
+    background-color: var(--Secondary-Color);
+    color: var(--Primary-Color);
+}
+
+#Cloud-Shell-Header{
+    padding: 1rem 2rem;
+    border-top: 1px solid var(--Tertiary-Color);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#Cloud-Shell-Header-Title-Container{
+    display: flex;
+    gap: 1rem;
+    align-self: center;
+}
+
+#Cloud-Shell-Header-Title-Icon-Container{
+    font-size: 1.8vw;
+}
+
+#Cloud-Shell-Header-Title-Text-Container{
+    line-height: 1.1rem;
+}
+
+#Cloud-Shell-Header-Title{
+    opacity: .6;
+    text-transform: uppercase;
+    font-size: .75vw;
+}
+
+#Cloud-Shell-Header-Subtitle{
+    font-size: .9vw;
+}
+
+#Cloud-Shell-Body{
+    width: 100%;
+    padding: 1rem;
+    height: 100%;
+    background-color: #000000;
+}
+
+#Cloud-Shell-Body > :first-child{
+    height: 100%;
+}
+
+#Cloud-Shell-Header-Actions-Container{
+    display: flex;
+    gap: 1rem;
+}
+
+#Cloud-Shell-Header-Drag-Icon-Container{
+    font-size: 1.8rem;
+    cursor: n-resize;
+}
+
+@media screen and (max-width: 768px){
+    #Cloud-Shell-Header{
+        padding: .5rem 1rem;
+    }
+
+    #Cloud-Shell-Header-Title-Icon-Container{
+        font-size: 1.5rem;
+    }
+
+    #Cloud-Shell-Header-Title-Container{
+        gap: .5rem;
+    }
+
+    #Cloud-Shell-Header-Title-Text-Container{
+        line-height: .8rem;
+    }
+
+    #Cloud-Shell-Header-Title{
+        font-size: .5rem;
+    }
+
+    #Cloud-Shell-Header-Subtitle{
+        font-size: .6rem;
+    }
+
+    .Cloud-Shell-Header-Icon-Container{
+        font-size: 1.1rem;
+    }
+}

@@ -1,0 +1,33 @@
+/***
+ * Copyright (C) Rodolfo Herrera Hernandez. All rights reserved.
+ * Licensed under the MIT license. See LICENSE file in the project root
+ * for full license information.
+ *
+ * =+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+ *
+ * The Moovilz Source Code.
+ * 
+ * For related information - https://github.com/CodeWithRodi/Moovilz/
+ * 
+ * :: https://moovilz.codewithrodi.com/
+ * :: https://moovilz-backend.codewithrodi.com/
+ *
+ * =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+****/
+
+.Header-Navigation-Item-Container{
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.Header-Navigation-Item-Container[data-isdisabled='true']{
+    text-decoration: line-through;
+    cursor: not-allowed;
+}
+
+.Header-Navigation-Item-Title{
+    text-transform: uppercase;
+    font-size: .8rem;
+    letter-spacing: 0.07rem;
+}

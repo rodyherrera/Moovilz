@@ -1,0 +1,105 @@
+/***
+ * Copyright (C) Rodolfo Herrera Hernandez. All rights reserved.
+ * Licensed under the MIT license. See LICENSE file in the project root
+ * for full license information.
+ *
+ * =+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+ *
+ * The Moovilz Source Code.
+ * 
+ * For related information - https://github.com/CodeWithRodi/Moovilz/
+ * 
+ * :: https://moovilz.codewithrodi.com/
+ * :: https://moovilz-backend.codewithrodi.com/
+ *
+ * =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+****/
+
+.City-Icon-Container{
+    padding: 1rem;
+    border-left: 1px solid var(--Tertiary-Color);
+}
+
+.City-Container .City-Details-Container .MuiCircularProgress-root{
+    color: var(--Primary-Color) !important;
+    width: 10px !important;
+    height: 10px !important;
+    margin-right: .5rem;
+}
+
+.City-Title-Container{
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.City-Details-Container{
+    opacity: .5;
+    margin-top: .3rem;
+    display: flex;
+    align-items: center;
+}
+
+.City-Details-Container span:not(:last-child)::after{
+    content: '•';
+    margin: 0 .4rem;
+}
+
+:root.Light-Mode .City-Details-Container{
+    opacity: .8;
+}
+
+.City-Container{
+    border: 1px solid var(--Tertiary-Color);
+    cursor: pointer;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    will-change: transform;
+    transition: .3s;
+}
+
+body.Rounded-Mode .City-Container{
+    border-radius: .8rem;
+}
+
+:root.Light-Mode .City-Container:hover{
+    color: var(--Secondary-Color);
+}
+
+.City-Container:hover{
+    background-color: var(--Tertiary-Color);
+}
+
+.City-Container:active{
+    transform: scale(0.98);
+}
+
+@media screen and (min-width: 768px) and (max-width: 1366px){
+    .City-Title-Container{
+        font-size: .95rem;
+    }
+
+    .City-Details-Container{
+        font-size: .8rem;
+    }
+}
+
+@media screen and (max-width: 768px){
+    .City-Details-Container span:not(:last-child)::after{
+        margin: 0 .3rem;
+    }
+
+    .City-Details-Container{
+        font-size: .7rem;
+        margin-top: .2rem;
+    }
+
+    .City-Title-Container{
+        font-size: .9rem;
+    }
+
+    .City-Icon-Container{
+        font-size: 1rem;
+    }
+}

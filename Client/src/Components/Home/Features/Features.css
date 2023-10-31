@@ -1,0 +1,39 @@
+/***
+ * Copyright (C) Rodolfo Herrera Hernandez. All rights reserved.
+ * Licensed under the MIT license. See LICENSE file in the project root
+ * for full license information.
+ *
+ * =+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+ *
+ * The Moovilz Source Code.
+ * 
+ * For related information - https://github.com/CodeWithRodi/Moovilz/
+ * 
+ * :: https://moovilz.codewithrodi.com/
+ * :: https://moovilz-backend.codewithrodi.com/
+ *
+ * =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+****/
+
+#Features-Container{
+    margin-top: 2rem;
+    display: flex;
+    padding-right: 1rem;
+    gap: 1rem;
+    max-width: 90%;
+    overflow-x: scroll;
+    padding-bottom: 1rem;
+}
+
+#Features-Container .Feature-Container-Opacity{
+    opacity: .4;
+    transform: scale(.98);
+}
+
+@media screen and (max-width: 768px){
+    #Features-Container{
+        margin-top: 0;
+        width: 100%;
+        max-width: unset;
+    }
+}

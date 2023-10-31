@@ -1,0 +1,102 @@
+/***
+ * Copyright (C) Rodolfo Herrera Hernandez. All rights reserved.
+ * Licensed under the MIT license. See LICENSE file in the project root
+ * for full license information.
+ *
+ * =+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+ *
+ * The Moovilz Source Code.
+ * 
+ * For related information - https://github.com/CodeWithRodi/Moovilz/
+ * 
+ * :: https://moovilz.codewithrodi.com/
+ * :: https://moovilz-backend.codewithrodi.com/
+ *
+ * =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+****/
+
+#Policies-Main{
+    max-width: 1100px;
+    margin: 0 auto 2rem;
+}
+
+#Policies-Header-Container{
+    display: flex;
+    flex-direction: column;
+    gap: .7rem;
+    margin: 5rem 0 4rem;
+}
+
+#Policies-Header-Title{
+    font-size: 2rem;
+    border-left: 1px solid var(--Primary-Color);
+    padding-left: 1rem;
+}
+
+#Policies-Header-Details{
+    margin-top: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: .2rem;
+}
+
+#Policies-Header-Details-Title{
+    opacity: .55;
+    font-size: 1.6rem;
+}
+
+#Policies-Header-Details-Subtitle{
+    max-width: 50%;
+    font-size: .98rem;
+}
+
+#Policies-Categories-Container{
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1366px){
+    #Policies-Header-Details-Subtitle,
+    #Policies-Header-Subtitle{
+        font-size: .95rem;
+    }
+}
+
+@media screen and (max-width: 768px){
+    #Policies-Header-Details-Subtitle,
+    #Policies-Main{
+        max-width: unset;
+    }
+
+    #Policies-Header-Details-Title{
+        font-size: 1.3rem;
+        font-weight: 700;
+        max-width: 90%;
+        line-height: 1.7rem;
+        font-style: italic;
+    }
+
+    #Policies-Header-Details-Subtitle{
+        font-size: .8rem;
+        max-width: 90%;
+    }
+
+    #Policies-Main{
+        margin: unset;
+        padding: 1rem;
+    }
+
+    #Policies-Header-Title{
+        font-size: 1.3rem;
+    }
+
+    #Policies-Header-Container{
+        margin: 1rem 0 2rem;
+    }
+
+    #Policies-Header-Subtitle{
+        font-size: .75rem;
+        max-width: 80%;
+    }
+}

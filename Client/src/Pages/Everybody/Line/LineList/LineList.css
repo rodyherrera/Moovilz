@@ -1,0 +1,49 @@
+/***
+ * Copyright (C) Rodolfo Herrera Hernandez. All rights reserved.
+ * Licensed under the MIT license. See LICENSE file in the project root
+ * for full license information.
+ *
+ * =+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+ *
+ * The Moovilz Source Code.
+ * 
+ * For related information - https://github.com/CodeWithRodi/Moovilz/
+ * 
+ * :: https://moovilz.codewithrodi.com/
+ * :: https://moovilz-backend.codewithrodi.com/
+ *
+ * =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+****/
+
+#Knowledge-Header-Subtitle-Container{
+    margin-top: 1rem;
+}
+
+.Binary-View-Container.Line-List .Knowledge-Header-Title{
+    display: flex;
+    flex-direction: column;
+}
+
+@media screen and (max-width: 768px){
+    .Binary-View-Container.Line-List .Knowledge-Body-Container{
+        height: 200px;
+    }
+
+    .Binary-View-Container.Line-List .Knowledge-Header-Title{
+        font-size: 2rem;
+        display: flex;
+    }
+
+    #Knowledge-Header-Title-HL{
+        display: flex;
+        flex-wrap: wrap;
+        gap: .8rem;
+    }
+
+    #Knowledge-Header-Title-HL span{
+        height: 50px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}

@@ -1,0 +1,127 @@
+/***
+ * Copyright (C) Rodolfo Herrera Hernandez. All rights reserved.
+ * Licensed under the MIT license. See LICENSE file in the project root
+ * for full license information.
+ *
+ * =+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+ *
+ * The Moovilz Source Code.
+ * 
+ * For related information - https://github.com/CodeWithRodi/Moovilz/
+ * 
+ * :: https://moovilz.codewithrodi.com/
+ * :: https://moovilz-backend.codewithrodi.com/
+ *
+ * =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+****/
+
+#Line-Details-Header-Container{
+    margin-top: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+#Line-Stops-Container,
+#Line-Stops-Skeleton-Container{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    gap: 1rem;
+    justify-content: space-between;
+    width: 100%;
+}
+
+#Line-Stops-Skeleton-Container > div{
+    width: calc(50% - 1rem);
+}
+
+#Line-Details-Knowledge-Top-Container{
+    display: flex;
+    width: 100%;
+    height: auto;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#Line-Details-Knowledge-City .Button-Text{
+    padding: .6rem 1rem;
+    text-transform: uppercase;
+    font-weight: 800;
+    letter-spacing: 0.08rem;
+}
+
+#Knowledge-Body-Image-Linear-Background{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(to top, var(--Primary-Linear-Gradient));
+}
+
+#Line-Details-Header-Container .Knowledge-Header-Title{
+    display: flex;
+    flex-direction: column;
+}
+
+.Binary-View-Container.Line-Details .Knowledge-Header-Container{
+    padding: 2rem 2rem 0;
+}
+
+.mapboxgl-ctrl-bottom-right{
+    display: none !important;
+}
+
+@media screen and (max-width: 768px){
+    .Interaction-Body-Container{
+        flex-direction: column;
+    }
+
+    .Binary-View-Container.Line-Details .Knowledge-Header-Container .Button{
+        max-width: 90%;
+    }
+
+    .Binary-View-Container.Line-Details .Knowledge-Header-Container .Outlined-Arrowed-Button-Container{
+        max-width: 90%;
+        width: auto;
+        justify-content: flex-start;
+    }
+
+    .Binary-View-Container.Line-Details .Knowledge-Header-Container .Button-Text,
+    .Binary-View-Container.Line-Details .Knowledge-Header-Container .Outlined-Arrowed-Button-Title{
+        white-space: nowrap;
+        overflow: hidden;
+        font-size: .55rem;
+        text-overflow: ellipsis;
+    }
+
+    #Line-Details-Knowledge-Top-Container > :first-child{
+        display: flex;
+        width: 50%;
+        justify-content: flex-start;
+    }
+
+    #Line-Details-Knowledge-Top-Container > :last-child{
+        display: flex;
+        width: 50%;
+        justify-content: flex-end;
+    }
+
+    #Line-Stops-Skeleton-Container > div{
+        width: 100%;
+    }
+    
+    .Binary-View-Container.Line-Details .Knowledge-Header-Container{
+        padding: 1rem 1rem 0;
+    }
+
+    #Line-Details-HL-Title{
+        display: flex;
+        flex-wrap: wrap;
+        gap: .8rem;
+    }
+
+    #Line-Details-Header-Container .Knowledge-Header-Title{
+        font-size: 2.2rem;
+    }
+}

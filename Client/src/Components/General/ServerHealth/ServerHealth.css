@@ -1,0 +1,50 @@
+/***
+ * Copyright (C) Rodolfo Herrera Hernandez. All rights reserved.
+ * Licensed under the MIT license. See LICENSE file in the project root
+ * for full license information.
+ *
+ * =+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+ *
+ * The Moovilz Source Code.
+ * 
+ * For related information - https://github.com/CodeWithRodi/Moovilz/
+ * 
+ * :: https://moovilz.codewithrodi.com/
+ * :: https://moovilz-backend.codewithrodi.com/
+ *
+ * =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+****/
+
+.Health-Container{
+    display: flex;
+    gap: .5rem;
+    align-items: center;
+}
+
+.Health-Icon{
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: var(--Information-Color);
+}
+
+.Health-Icon[data-error='true']{
+    background-color: var(--Danger-Color);
+}
+
+.Server-Health-Container .MuiCircularProgress-root{
+    color: var(--Primary-Color) !important;
+    width: 15px !important;
+    height: 15px !important;
+}
+
+.Health-Title{
+    color: var(--Primary-Color);
+    font-size: .9rem;
+}
+
+@media screen and (max-width: 768px){
+    .Health-Title{
+        font-size: .8rem;
+    }
+}

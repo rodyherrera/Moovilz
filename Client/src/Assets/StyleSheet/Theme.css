@@ -1,0 +1,48 @@
+/***
+ * Copyright (C) Rodolfo Herrera Hernandez. All rights reserved.
+ * Licensed under the MIT license. See LICENSE file in the project root
+ * for full license information.
+ *
+ * =+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+ *
+ * The Moovilz Source Code.
+ * 
+ * For related information - https://github.com/CodeWithRodi/Moovilz/
+ * 
+ * :: https://moovilz.codewithrodi.com/
+ * :: https://moovilz-backend.codewithrodi.com/
+ *
+ * =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+****/
+
+:root{
+    --Primary-Color: #FFFFFF;
+    --HSLA-Primary-Color: hsla(0, 0%, 93%, 1);
+    --HSLA-Secondary-Color: hsla(0, 0%, 63%, 1);
+    --Secondary-Color: #121212;
+    --Tertiary-Color: #333333;
+    --Highlight-Color: #cbfd13;
+    --Icon-Color: #8A63D2;
+    --Information-Color: #0070f3;
+    --Danger-Color: #D5241B;
+    --Scrollbar-Thumb-Background-Color: #c9c8c8;
+    --Scrollbar-Thumb-Hover-Background-Color: #b3b2b2;
+    --Primary-Linear-Gradient: rgb(18 18 18),rgba(128,128,128,0);
+    --Skeleton-Background-Color: #1f1f1f;
+}
+
+:root.Light-Mode{
+    --Primary-Color: #121212;
+    --HSLA-Primary-Color: hsla(0, 0%, 93%, 1);
+    --HSLA-Secondary-Color: hsl(0deg 0% 19.16%);
+    --Secondary-Color: #ececec;
+    --Tertiary-Color: #333333;
+    --Highlight-Color: #cbfd13;
+    --Icon-Color: #8A63D2;
+    --Information-Color: #0070f3;
+    --Danger-Color: #D5241B;
+    --Scrollbar-Thumb-Background-Color: #c9c8c8;
+    --Scrollbar-Thumb-Hover-Background-Color: #b3b2b2;
+    --Primary-Linear-Gradient: rgb(236 236 236),rgba(128,128,128,0);
+    --Skeleton-Background-Color: #bdbdbd;
+}
