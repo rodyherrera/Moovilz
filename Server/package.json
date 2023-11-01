@@ -30,6 +30,7 @@
     "mongoose-partial-search": "^1.0.6",
     "nodemon": "^3.0.1",
     "uuid": "^9.0.0",
-    "xss-clean": "^0.1.4"
+    "xss-clean": "^0.1.4",
+    "yauzl-promise": "^4.0.0"
   }
 }
