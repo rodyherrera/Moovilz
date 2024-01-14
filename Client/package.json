@@ -3,15 +3,15 @@
   "version": "1.0.1",
   "type": "module",
   "license": "MIT",
-  "author": "@CodeWithRodi",
+  "author": "@rodyherrera",
   "engines": {
     "node": "16.13.0"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/CodeWithRodi/Moovilz/"
+    "url": "https://github.com/rodyherrera/Moovilz/"
   },
-  "homepage": "https://moovilz.codewithrodi.com/",
+  "homepage": "https://moovilz.rodyherrera.com/",
   "scripts": {
     "dev": "vite",
     "build": "vite build",

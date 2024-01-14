@@ -7,10 +7,10 @@
  *
  * The Moovilz Source Code.
  * 
- * For related information - https://github.com/CodeWithRodi/Moovilz/
+ * For related information - https://github.com/rodyherrera/Moovilz/
  * 
- * :: https://moovilz.codewithrodi.com/
- * :: https://moovilz-backend.codewithrodi.com/
+ * :: https://moovilz.rodyherrera.com/
+ * :: https://moovilz-backend.rodyherrera.com/
  *
  * =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
 ****/

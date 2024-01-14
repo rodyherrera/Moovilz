@@ -7,10 +7,10 @@
  *
  * The Moovilz Source Code.
  * 
- * For related information - https://github.com/CodeWithRodi/Moovilz/
+ * For related information - https://github.com/rodyherrera/Moovilz/
  * 
- * :: https://moovilz.codewithrodi.com/
- * :: https://moovilz-backend.codewithrodi.com/
+ * :: https://moovilz.rodyherrera.com/
+ * :: https://moovilz-backend.rodyherrera.com/
  *
  * =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
 ****/
@@ -48,8 +48,8 @@ export const DisplayInitialCommandLineContent = (XTerm) => {
         '\x1b[38;5;3mM&CS@1.0.0-Alpha\x1b[0m',
         'Welcome to the \x1b[38;5;4mCloud Shell\x1b[0m, type "help" to get started.',
         'For more information about Cloud Shell or the software in general, visit:',
-        '-> \x1b[38;5;4mhttps://moovilz-docs.codewithrodi.com/\x1b[0m \x1b[48;5;234m(The Official Moovilz Documentation)\x1b[0m',
-        '-> \x1b[38;5;4mhttps://github.com/codewithrodi/Moovilz/\x1b[0m \x1b[48;5;234m(Source Code, MIT License)\x1b[0m',
+        '-> \x1b[38;5;4mhttps://moovilz-docs.rodyherrera.com/\x1b[0m \x1b[48;5;234m(The Official Moovilz Documentation)\x1b[0m',
+        '-> \x1b[38;5;4mhttps://github.com/rodyherrera/Moovilz/\x1b[0m \x1b[48;5;234m(Source Code, MIT License)\x1b[0m',
         'Authenticating under the \x1b[38;5;3m"Guest"\x1b[0m roles, Happy Hacking!'
     ];
     InitialLines.forEach((Line) => XTerm.writeln(Line));

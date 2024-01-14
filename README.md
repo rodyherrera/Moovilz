@@ -29,7 +29,7 @@ Consider that, at this point, I assume that you already have the dependencies pr
 
 ```bash
 # Cloning the Github repository that contains the source code.
-git clone https://github.com/CodeWithRodi/Moovilz/ && cd Moovilz
+git clone https://github.com/rodyherrera/Moovilz/ && cd Moovilz
 
 # Accessing the "Client" folder, which stores the source code of the 
 # Vite + ReactjS (Frontend) application, and then installing its required modules from NPM.
@@ -43,7 +43,7 @@ cd ../Server && npm install --force
 You may prefer to run everything in just one line...
 
 ```bash
-git clone https://github.com/CodeWithRodi/Moovilz/ && cd Moovilz && cd Server && npm install --force && cd ../Client && npm install --force && cd ..
+git clone https://github.com/rodyherrera/Moovilz/ && cd Moovilz && cd Server && npm install --force && cd ../Client && npm install --force && cd ..
 ```
 
 Once executed, you should have cloned the repository and consequently installed the required NodeJS packages so that the backend and frontend server can later be built within your system's network.
@@ -59,7 +59,7 @@ Consider that, in order to run the server, you need to make modifications to thi
 NODE_ENV = production
 
 # Address of the server where the client application is running.
-CLIENT_HOST = https://moovilz.codewithrodi.com/
+CLIENT_HOST = https://moovilz.rodyherrera.com/
 
 # Port where the server will 
 # start executing over the network.
@@ -110,7 +110,7 @@ In the same way in which it was done in the previous reading, the list of enviro
 
 ```bash
 # You must specify the address where the backend server is running, in this case, by default this is the production URL of the DEMO.
-VITE_SERVER = https://moovilz-backend.codewithrodi.com
+VITE_SERVER = https://moovilz-backend.rodyherrera.com
 
 # The server has a suffix to be able to access its respective API
 # in this case we use v1.

@@ -4,13 +4,13 @@
   "main": "Server.js",
   "license": "MIT",
   "description": "Moovilz server",
-  "author": "@CodeWithRodi",
+  "author": "@rodyherrera",
   "engines": {
     "node": "16.13.0"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/CodeWithRodi/Moovilz/"
+    "url": "https://github.com/rodyherrera/Moovilz/"
   },
   "scripts": {
     "start": "node Server.js",
